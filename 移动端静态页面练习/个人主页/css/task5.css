@@ -1,0 +1,152 @@
+/* 通用样式 */
+html{
+    font-size:16px;
+    font-family: "微软雅黑 light";
+}
+html,body,header,ul,li{
+    padding:0;
+    margin:0;
+}
+/* header */
+header{
+    z-index:1;
+    position:fixed;
+    top:0;
+    display:flex;
+    display:-webkit-flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:3rem;
+    color:white;
+    background-color:#5fc0cd;    
+}
+header .return{
+    position:absolute;
+    left:1rem;
+}
+/* End header */
+
+/* main */
+  /* main head */
+main{
+    position:absolute;
+    top:3rem;
+    width:100%;
+    font-family: "微软雅黑";
+    margin-bottom:3.5rem;
+}
+main .head{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center; 
+    width:100%;
+    height:9rem;
+    background:url("../images/banner.png") no-repeat center center;
+    background-size:100% 100%;
+}
+main .head-img{
+    margin:0 30px;
+    width:100px;
+    height:100px;
+    background:url("../images/head.png") no-repeat center center;
+    background-size:contain;
+}
+main .head-text{
+    width:100%;
+    color:white;
+}
+main .head-text p:last-child{
+    font-size:.7rem;
+}
+main .text-age{
+    font-size:.85rem;
+}
+main .head-text p:last-child::before{
+    content:"";
+    display: inline-block;
+    width:1.2rem;
+    height:1rem;
+    background: url("../images/icon.png") no-repeat center center;
+    background-size:.7rem;
+}
+  /* End main head */
+
+  /* main content */
+main .content-head >span{
+    box-sizing:border-box;
+    padding-left:1rem;
+    border-left:1px solid #5fc0cd;
+    letter-spacing:.3rem;   
+    font-weight:bold;
+}
+main .content > ul{
+    border-top:1px solid #eff0f4;
+    border-bottom:1px solid #eff0f4;
+}
+main .flex{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    width:calc(100% - 2rem);
+    margin-left:.7rem;
+    padding:1rem;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+main .house > div::before{
+    content:"";
+    display:inline-block;
+    width:1.2rem;
+    height:1rem;
+    background:url("../images/空心星星.png") no-repeat center center;
+    background-size:.7rem;
+}
+main ul > li:not(:last-child){
+    border-bottom:1px solid #eff0f4;
+}
+main .sidebar{
+    color:#A9A9A9;
+    white-space:nowrap;
+    letter-spacing:.1rem;
+    padding-right:1rem;
+    border-right:1px solid #eff0f4;
+}
+main .live{
+    color:black;
+}
+main .text{
+    padding-left:1rem;
+}
+main .price .text{
+    color:red;
+}
+  /* End main content */
+/* End main */
+
+/* footer */
+footer{
+    position:fixed;
+    bottom:0;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:3.5rem;
+    background-color:white;
+}
+footer input{
+    width:45%;
+    height:3rem;
+    border:1px solid #5fc0cd;
+    border-radius:5px; 
+    color:#5fc0cd;
+    text-align:center;
+    background-color:white;
+}
+footer input:last-child{
+    color:white;
+    background-color:#5fc0cd;
+}
+/* End footer */
